@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-blue-950 text-white overflow-auto">
       <div className="max-w-4xl mx-auto p-6 space-y-10">
         <h1 className="text-4xl font-bold text-center text-white">
-          Biyoinformatiğe Giriş
+          Biyoinformatiğe Giriş 🧬
         </h1>
         <p className="text-center text-lg text-white">
           Yeni başlayanlar için kaynaklar ve genomik analiz örnekleri
@@ -66,7 +66,7 @@ export default function Home() {
               ].map((course, i) => (
                 <Card
                   key={i}
-                  className="w-52 h-44 bg-blue-900/80 text-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/10 backdrop-blur"
+                  className="w-30 h-44 bg-blue-900/80 text-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/10 backdrop-blur"
                 >
                   <CardContent className="p-4 text-center h-full flex flex-col justify-center">
                     <h3 className="text-lg font-semibold mb-1 text-white">
