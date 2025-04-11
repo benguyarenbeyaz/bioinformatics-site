@@ -32,67 +32,46 @@ export default function Home() {
         </TabsList>
 
         <TabsContent value="courses">
-          <div className="grid gap-4 md:grid-cols-2">
-            <Card>
-              <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">R</h2>
-                <p className="text-sm text-gray-700">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center px-4 md:px-0">
+            {[
+              {
+                title: "R",
+                link: "https://www.datacamp.com/courses/free-introduction-to-r",
+                label: "Introduction to R – DataCamp",
+              },
+              {
+                title: "Python",
+                link: "https://www.datacamp.com/courses/intro-to-python-for-data-science",
+                label: "Intro to Python for Data Science – DataCamp",
+              },
+              {
+                title: "Linux",
+                link: "https://training.linuxfoundation.org/training/introduction-to-linux/",
+                label: "Introduction to Linux – Linux Foundation",
+              },
+              {
+                title: "Bash",
+                link: "https://www.datacamp.com/courses/introduction-to-bash-scripting",
+                label: "Introduction to Bash Scripting – DataCamp",
+              },
+            ].map((course, i) => (
+              <Card
+                key={i}
+                className="w-full max-w-sm bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+              >
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-xl font-semibold mb-2 text-bio">{course.title}</h3>
                   <a
-                    href="https://www.datacamp.com/courses/free-introduction-to-r"
+                    href={course.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
+                    className="text-blue-600 hover:underline text-sm"
                   >
-                    Introduction to R - DataCamp
+                    {course.label}
                   </a>
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">Python</h2>
-                <p className="text-sm text-gray-700">
-                  <a
-                    href="https://www.datacamp.com/courses/intro-to-python-for-data-science"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Intro to Python for Data Science - DataCamp
-                  </a>
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">Linux</h2>
-                <p className="text-sm text-gray-700">
-                  <a
-                    href="https://training.linuxfoundation.org/training/introduction-to-linux/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Introduction to Linux - The Linux Foundation
-                  </a>
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-4">
-                <h2 className="text-xl font-semibold">Bash</h2>
-                <p className="text-sm text-gray-700">
-                  <a
-                    href="https://www.datacamp.com/courses/introduction-to-bash-scripting"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Introduction to Bash Scripting - DataCamp
-                  </a>
-                </p>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </TabsContent>
 
