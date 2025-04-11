@@ -5,12 +5,8 @@ import { Button } from "../components/ui/button";
 
 export default function Home() {
   return (
-    <main
-      className="fixed inset-0 bg-fixed bg-cover bg-center text-white overflow-auto"
-      style={{ backgroundImage: "url('/images/futuristic.jpg')" }}
-    >
-      <div className="absolute inset-0 bg-black/70 z-0" />
-      <div className="relative z-10 max-w-4xl mx-auto p-6 space-y-10">
+    <main className="min-h-screen bg-blue-950 text-white overflow-auto">
+      <div className="max-w-4xl mx-auto p-6 space-y-10">
         <h1 className="text-4xl font-bold text-center text-white">
           Biyoinformatiğe Giriş
         </h1>
@@ -18,7 +14,7 @@ export default function Home() {
           Yeni başlayanlar için kaynaklar ve genomik analiz örnekleri
         </p>
 
-        <div className="bg-black/60 border-l-4 border-teal-400 p-6 rounded-md">
+        <div className="bg-blue-900/60 border-l-4 border-teal-400 p-6 rounded-md">
           <p className="text-base text-white">
             <strong className="text-lg font-semibold text-white">
               GATK (Genome Analysis Toolkit)
@@ -39,7 +35,7 @@ export default function Home() {
         </div>
 
         <Tabs defaultValue="courses" className="w-full">
-          <TabsList className="grid grid-cols-2 w-full mb-6 bg-black/40 backdrop-blur rounded-md text-white">
+          <TabsList className="grid grid-cols-2 w-full mb-6 bg-blue-800/80 backdrop-blur rounded-md text-white">
             <TabsTrigger value="courses">Kurslar</TabsTrigger>
             <TabsTrigger value="analysis">Analiz Kodları</TabsTrigger>
           </TabsList>
@@ -70,7 +66,7 @@ export default function Home() {
               ].map((course, i) => (
                 <Card
                   key={i}
-                  className="w-52 h-44 bg-black/60 text-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/10 backdrop-blur"
+                  className="w-52 h-44 bg-blue-900/80 text-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 border border-white/10 backdrop-blur"
                 >
                   <CardContent className="p-4 text-center h-full flex flex-col justify-center">
                     <h3 className="text-lg font-semibold mb-1 text-white">
@@ -92,10 +88,10 @@ export default function Home() {
 
           <TabsContent value="analysis">
             <div className="space-y-6">
-              <Card className="bg-black/60 text-white border border-white/10 backdrop-blur">
+              <Card className="bg-blue-900/80 text-white border border-white/10 backdrop-blur">
                 <CardContent className="p-4">
                   <h2 className="text-xl font-semibold text-white">Somatik Analiz</h2>
-                  <pre className="bg-black/40 p-2 rounded text-sm overflow-auto text-white">
+                  <pre className="bg-blue-950 p-2 rounded text-sm overflow-auto text-white">
 parabricks somatic \
   --ref reference.fa \
   --in-tumor tumor.bam \
@@ -115,10 +111,10 @@ parabricks somatic \
                 </CardContent>
               </Card>
 
-              <Card className="bg-black/60 text-white border border-white/10 backdrop-blur">
+              <Card className="bg-blue-900/80 text-white border border-white/10 backdrop-blur">
                 <CardContent className="p-4">
                   <h2 className="text-xl font-semibold text-white">Germline Analiz</h2>
-                  <pre className="bg-black/40 p-2 rounded text-sm overflow-auto text-white">
+                  <pre className="bg-blue-950 p-2 rounded text-sm overflow-auto text-white">
 parabricks germline \
   --ref reference.fa \
   --in-bam sample.bam \
