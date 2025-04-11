@@ -5,7 +5,7 @@ import { Button } from "../components/ui/button";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-blue-950 text-white overflow-auto">
+    <main className="bg-[url('/images/science.jpg')] bg-cover bg-no-repeat">
       <div className="max-w-4xl mx-auto p-6 space-y-10">
         <h1 className="text-4xl font-bold text-center text-white">
           Biyoinformatiğe Giriş 🧬
