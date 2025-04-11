@@ -26,13 +26,13 @@ export default function Home() {
       </div>
 
       <Tabs defaultValue="courses" className="w-full">
-        <TabsList className="grid grid-cols-2 w-full">
+        <TabsList className="grid grid-cols-2 w-full mb-6">
           <TabsTrigger value="courses">Kurslar</TabsTrigger>
           <TabsTrigger value="analysis">Analiz Kodları</TabsTrigger>
         </TabsList>
 
         <TabsContent value="courses">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-items-center px-4 md:px-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center px-4 md:px-0">
             {[
               {
                 title: "R",
@@ -57,10 +57,12 @@ export default function Home() {
             ].map((course, i) => (
               <Card
                 key={i}
-                className="w-full max-w-sm bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+                className="w-full max-w-sm bg-white rounded-3xl shadow-[0_10px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.2)] transition-shadow duration-300 border border-gray-100"
               >
                 <CardContent className="p-6 text-center">
-                  <h3 className="text-xl font-semibold mb-2 text-bio">{course.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-3 text-bio drop-shadow-sm">
+                    {course.title}
+                  </h3>
                   <a
                     href={course.link}
                     target="_blank"
@@ -127,4 +129,3 @@ parabricks germline \
     </main>
   );
 }
-
