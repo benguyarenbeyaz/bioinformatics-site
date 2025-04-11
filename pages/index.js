@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main
       className="fixed inset-0 bg-fixed bg-cover bg-center text-white overflow-auto"
-      style={{ backgroundImage: "url('/images/science.jpg')" }}
+      style={{ backgroundImage: "url('/images/futuristic.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/70 z-0" />
       <div className="relative z-10 max-w-4xl mx-auto p-6 space-y-10">
