@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardContent } from "../components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card.tsx";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs.tsx";
+import { Button } from "../components/ui/button.tsx";
 
 export default function Home() {
   return (
