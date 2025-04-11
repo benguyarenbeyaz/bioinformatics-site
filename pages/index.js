@@ -5,7 +5,7 @@ import { Button } from "../components/ui/button";
 
 export default function Home() {
   return (
-    <main className="max-w-4xl mx-auto p-6 space-y-10 bg-gradient-to-br from-gray-900 via-teal-900 to-gray-800 text-white min-h-screen">
+    <main className="max-w-4xl mx-auto p-6 space-y-10 bg-[url('/images/dna-pattern-dark.svg')] bg-fixed bg-cover bg-center text-white min-h-screen">
       <h1 className="text-4xl font-bold text-center text-teal-300">Biyoinformatiğe Giriş</h1>
       <p className="text-center text-lg text-gray-300">
         Yeni başlayanlar için kaynaklar ve genomik analiz örnekleri
@@ -129,4 +129,3 @@ parabricks germline \
     </main>
   );
 }
-
